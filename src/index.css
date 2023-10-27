@@ -1,13 +1,128 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.app-container h1{
+  color: rgb(19, 6, 165);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Pokemon Solid', sans-serif;
+}
+
+.pokemon-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0.2rem;
+  margin: 0.3rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 2rem;
+  min-width: 160px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+
+h3{
+  margin-bottom: 0.2rem;
+  font-family: 'Pokemon Solid', sans-serif;
+}
+
+.thumb-container .number{
+  padding: 0.2rem 0.4rem;
+  font-family: 'Pokemon Solid', sans-serif;
+}
+
+.thumb-container img{
+  width: 190px;
+  height: 190px;
+}
+
+.thumb-container small{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.rock{
+  background-image: linear-gradient(to top, #c79081 0%, #d4a779 100%);
+}
+.fire{
+  background-image: linear-gradient(to top, #cbb77a 0%, #d38b58 100%);
+}
+.water{
+  background-image: linear-gradient(to top, #89f7fe 0%, #66a6ff 100%);
+}
+.grass{
+  background-image: linear-gradient(to top, #d4fc79 0%, #96e6a1 100%);
+}
+.ghost{
+  background-image: linear-gradient(to top, #e2ebf0 0%, #bc8ed8 100%);
+}
+.electric{
+  background-image: linear-gradient(to top, #f83600 0%, #f9d423 100%);
+}
+.bug{
+  background-image: linear-gradient(to top, #b0e680 0%, #eacda3 100%);
+}
+.poison{
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+}
+.normal{
+  background-image: linear-gradient(to top, #e3fdf5 0%, #fccef3 100%);
+}
+.fairy{
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 90%, #ffdfff 100%);
+}
+.ground{
+  background-image: linear-gradient(to top, #ffda9a 0%, #bc965d 100%);
+}
+.psychic{
+  background-image: linear-gradient(to top, #ff9add 0%, #ac5dbc 100%);
+}
+.fighting{
+  background-image: linear-gradient(to top, #ffb09a 0%, #5dbca4 100%);
+}
+
+.detail-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.detail-wrapper button{
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
 }
